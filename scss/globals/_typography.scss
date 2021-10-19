@@ -1,0 +1,12 @@
+$balow-condensed: 'Barlow Condensed', sans-serif;
+
+$balow:  'Barlow', sans-serif;
+
+
+h1, h2, h3, a{
+    font-family: $balow-condensed;
+}
+
+body{
+    font-family: $balow;
+}
