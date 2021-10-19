@@ -1,0 +1,45 @@
+@import '../utils';
+@import '../globals';
+
+
+.navbar{
+    margin-top: toRem(64);
+    
+    &__logo{
+        position: relative;
+        height: toRem(30);
+        width: toRem(30);
+    }
+    
+    &__links{
+        
+        &-primary{
+
+            .dot{
+                margin-left: toRem(40);
+                color: $very-dark-blue;
+            }
+            
+            a{
+                color: $very-dark-blue;
+                text-decoration: none;
+                font-weight: 700;
+                &:not(:first-child){
+                    margin-left: toRem(40);
+                }
+            }
+        }
+
+        &-secondary{
+            span{
+                display: block;
+                background-color: $very-dark-blue;
+                width: toRem(24);
+                height: toRem(2);
+                margin-bottom: toRem(5);
+                &:not(:last-child){
+                }
+            }
+        }
+    }
+}

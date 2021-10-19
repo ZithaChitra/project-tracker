@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
 
 
 const Home: NextPage = () => {
@@ -11,19 +12,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      Product
-      Features
-      Pricing
-      Login
+      <Navbar />
 
-      New
+      {/* New
       Monograph Dashboard
 
       Powerful insights into your team
       Project planning and time tracking for agile teams
 
       Schedule a demo
-      to see a live preview
+      to see a live preview */}
 
     </div>
   )

@@ -58,7 +58,13 @@ body{
   }
 }
 
+h1, h2, h3, a{
+    font-family: $balow-condensed;
+}
 
+body{
+    font-family: $balow;
+}
 
 // padding
 .pad{
@@ -67,14 +73,14 @@ body{
   &-l{
     padding-left: toRem(23);
     @include breakpoints-up(large){
-      padding-left: toRem(167);
+      padding-left: toRem(164);
     }
   }
 
   &-r{
     padding-right: toRem(23);
     @include breakpoints-up(large){
-      padding-right: toRem(167);
+      padding-right: toRem(164);
     }
   }
 
@@ -83,8 +89,8 @@ body{
     padding-right: toRem(24);
 
     @include breakpoints-up(large){
-      padding-left: toRem(167);
-      padding-right: toRem(167);
+      padding-left: toRem(164);
+      padding-right: toRem(164);
     }
   }
 }
