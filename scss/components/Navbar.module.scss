@@ -1,45 +1,80 @@
-@import '../utils';
-@import '../globals';
+@import "../utils";
+@import "../globals";
 
+.navbar {
+  margin-top: toRem(64);
 
-.navbar{
-    margin-top: toRem(64);
-    
-    &__logo{
-        position: relative;
-        height: toRem(30);
-        width: toRem(30);
-    }
-    
-    &__links{
-        
-        &-primary{
+  @include breakpoints-down(small) {
+    margin-bottom: toRem(61);
+  }
 
-            .dot{
-                margin-left: toRem(40);
-                color: $very-dark-blue;
-            }
-            
-            a{
-                color: $very-dark-blue;
-                text-decoration: none;
-                font-weight: 700;
-                &:not(:first-child){
-                    margin-left: toRem(40);
-                }
-            }
+  @include breakpoints-up(large) {
+    margin-bottom: toRem(110);
+  }
+
+//   &::before {
+//     content: " ";
+//     // border: 1px solid black;
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background-color: $light-grayish-blue;
+//     border-bottom-left-radius: toRem(48);
+//     height: toRem(424);
+//     z-index: -10;
+
+//     @include breakpoints-down(medium) {
+//       width: toRem(184);
+//     }
+
+//     @include breakpoints-up(large) {
+//       width: toRem(703);
+//     }
+//   }
+
+  &__logo {
+    position: relative;
+    height: toRem(30);
+    width: toRem(30);
+  }
+
+  &__links {
+    &-primary {
+      #dot {
+        margin-left: toRem(40);
+        color: $dark-grayish-blue;
+      }
+
+      a {
+        color: $very-dark-blue;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        &:not(:first-child) {
+          margin-left: toRem(40);
         }
 
-        &-secondary{
-            span{
-                display: block;
-                background-color: $very-dark-blue;
-                width: toRem(24);
-                height: toRem(2);
-                margin-bottom: toRem(5);
-                &:not(:last-child){
-                }
-            }
+        &:hover {
+          text-decoration: underline;
         }
+      }
+
+      #login {
+        color: $dark-grayish-blue;
+      }
     }
+
+    &-secondary {
+      span {
+        display: block;
+        background-color: $very-dark-blue;
+        width: toRem(24);
+        height: toRem(2);
+        margin-bottom: toRem(5);
+        &:not(:last-child) {
+        }
+      }
+    }
+  }
 }

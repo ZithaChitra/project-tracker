@@ -1,0 +1,64 @@
+@import "../utils";
+@import "../globals";
+
+.heroe {
+  display: grid;
+  grid-template-columns: minmax(toRem(374), 1fr) 1fr;
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include breakpoints-up(large) {
+      order: 1;
+    }
+  }
+
+  &__text{
+      h4{
+          font-size: toRem(18);
+          word-spacing: toRem(12);
+          letter-spacing: toRem(4);
+          color: $brayish-blue;
+          text-transform: uppercase;
+          span{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: toRem(58);
+              height: toRem(25);
+              border-radius: toRem(12.5);
+              text-align: center;
+              display: inline-block;
+              background-color: $very-dark-blue;
+              color: white;
+              font-weight: 700;
+              margin-right: toRem(15);
+              letter-spacing: unset !important;
+          }
+      }
+
+      h1{
+          color: $very-dark-blue;
+          font-size: toRem(55);
+          font-weight: 700;
+          text-transform: uppercase;
+          line-height: toRem(50);
+          margin-bottom: toRem(42);
+      }
+
+      p{
+          margin-bottom: toRem(50);
+          font-size: toRem(20);
+          color: $dark-grayish-blue;
+      }
+
+      .inline{
+          a{
+              margin-right: toRem(22);
+          }
+        
+      }
+  }
+  
+}

@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Heroe from '../components/Heroe'
 import Navbar from '../components/Navbar'
 
 
@@ -13,15 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <Navbar />
-
-      {/* New
-      Monograph Dashboard
-
-      Powerful insights into your team
-      Project planning and time tracking for agile teams
-
-      Schedule a demo
-      to see a live preview */}
+      <Heroe />
+      
 
     </div>
   )
